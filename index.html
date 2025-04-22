@@ -263,54 +263,60 @@
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
   </section>
   <section id="projects">
-    <style>
-      .about-containers {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        justify-items: center;
-      }
-  
-      .details-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        padding: 1rem;
-        border: 1px solid #ccc;
-        border-radius: 20px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      }
-  
-      .article-container img {
-        max-width: 100%;
-        border-radius: 10px;
-      }
-  
-      .btn-container {
-        margin-top: auto;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-      }
-  
-      .project-btn {
-        padding: 0.5rem 1.5rem;
-        font-weight: bold;
-        border: 1px solid #000;
-        border-radius: 30px;
-        background-color: white;
-        cursor: pointer;
-      }
-  
-      @media (max-width: 768px) {
-        .about-containers {
-          grid-template-columns: 1fr;
+    <section id="projects">
+      <style>
+        #projects .about-containers {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 2rem;
+          justify-items: center;
         }
-      }
-    </style>
-  
+    
+        #projects .details-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          text-align: center;
+          padding: 1rem;
+          border: 1px solid #ccc;
+          border-radius: 20px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          width: 100%;
+          max-width: 500px; /* limite la largeur pour que ça reste élégant */
+        }
+    
+        #projects .article-container img {
+          max-width: 100%;
+          border-radius: 10px;
+        }
+    
+        #projects .btn-container {
+          margin-top: auto;
+          display: flex;
+          justify-content: center;
+          width: 100%;
+        }
+    
+        #projects .project-btn {
+          padding: 0.5rem 1.5rem;
+          font-weight: bold;
+          border: 1px solid #000;
+          border-radius: 30px;
+          background-color: white;
+          cursor: pointer;
+        }
+    
+        @media (max-width: 768px) {
+          #projects .about-containers {
+            grid-template-columns: 1fr;
+          }
+        }
+      </style>
+    
+      <!-- Ton HTML ici inchangé -->
+    </section>
+    
     <p class="section__text__p1">Browse My Recent</p>
     <h1 class="title">Projects</h1>
     <div class="experience-details-container">
@@ -358,7 +364,7 @@
           <div class="article-container">
             <img src="./assets/ML.jpg" alt="Project 4" class="project-img" />
           </div>
-          <h2 class="experience-sub-title project-title">implementation from scratch of Machine Learning methods</h2>
+          <h2 class="experience-sub-title project-title">implentation from scratch of Maching Learning methods</h2>
           <div class="btn-container">
             <button class="btn btn-color-2 project-btn"
               onclick="location.href='https://github.com/wacimbrawse/implentation_from_scratch_de_methodes_de_ML'">
@@ -372,53 +378,6 @@
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#Certification'" />
   </section>
   <section id="Certification">
-    <style>
-      .about-containers {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        justify-items: center;
-      }
-  
-      .details-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        padding: 1rem;
-        border: 1px solid #ccc;
-        border-radius: 20px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      }
-  
-      .article-container img {
-        max-width: 100%;
-        border-radius: 10px;
-      }
-  
-      .btn-container {
-        margin-top: auto;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-      }
-  
-      .project-btn {
-        padding: 0.5rem 1.5rem;
-        font-weight: bold;
-        border: 1px solid #000;
-        border-radius: 30px;
-        background-color: white;
-        cursor: pointer;
-      }
-  
-      @media (max-width: 768px) {
-        .about-containers {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
     <h1 class="title">My certifications</h1>
     <div class="section-containerS">
 
